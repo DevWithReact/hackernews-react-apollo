@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import LinkList from './components/LinkList';
 import CreateLink from './components/CreateLink';
-import { Route, Routes } from 'react-router-dom';
+import Login from './components/Login';
 import Header from './components/Header';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             path="/create"
             element={<CreateLink/>}
           />
+          <Route path="/login" element={<Login/>} />
         </Routes>
       </div>
     </div>
